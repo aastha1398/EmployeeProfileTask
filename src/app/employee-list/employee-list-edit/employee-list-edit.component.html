@@ -1,0 +1,40 @@
+<style>
+    table,
+    th,
+    td,
+    tr {
+        border: 0px;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 20px;
+        width: 50%;
+
+    }
+</style>
+<br>
+<table align="center" mat-table width="100%" class="mat-elevation-z8">
+    <tr>
+        <th><button [routerLink]="[ '/create']"><i class="fa fa-user-plus"></i></button></th>                                                             
+        <th><input matInput type="text" [(ngModel)]="abcd" placeholder="Search"> </th>
+    </tr>
+    <tr>
+        <th>EmployeeName<span (click)="sortUp()"> &#x2195;</span></th>
+        <th>Contact Number</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Department</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+
+    <tr *ngFor="let employee of employees | search:'empName,empContact,empEmail,empCity,empDepartment': abcd | sort: params: reverse ">
+        <td>{{employee.empName}}</td>
+        <td>{{employee.empContact}}</td>
+        <td>{{employee.empEmail}}</td>
+        <td>{{employee.empCity}}</td>
+        <td>{{employee.empDepartment}}</td>
+        <td><button (click)="deleteEmp(employee.id)" class="material-icons"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+        <td><a [routerLink]="[ '/edit', employee.id ]"><i class="fa fa-external-link"></i></a></td>
+    </tr>
+</table>
+<br><br>

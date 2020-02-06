@@ -1,0 +1,48 @@
+{
+  "Employees": [
+    {
+      "empName": "Aastha yadav",
+      "empEmail": "aasthayadav@gmail.com",
+      "empContact": "5683232632",
+      "empDepartment": ".net",
+      "gender": "Female",
+      "empCity": "Navsari",
+      "hireDate": "2020-W09",
+      "perEmp": "false",
+      "id": 2
+    },
+    {
+      "empName": "Shruti Savaj",
+      "empEmail": "shruti@gmail.com",
+      "empContact": "9856321470",
+      "empDepartment": ".net",
+      "gender": "Female",
+      "empCity": "Valsad",
+      "hireDate": "2020-W09",
+      "perEmp": true,
+      "id": 3
+    },
+    {
+      "empName": "Tapas Vashi",
+      "empEmail": "tapas@gmail.com",
+      "empContact": "9632587410",
+      "empDepartment": "Angular",
+      "gender": "Male",
+      "empCity": "Valsad",
+      "hireDate": "2015-W49",
+      "perEmp": true,
+      "id": 4
+    },
+    {
+      "empName": "Bharghav Baleja",
+      "empEmail": "bhargav@gmail.com",
+      "empContact": "8956231470",
+      "empDepartment": ".net",
+      "gender": "Male",
+      "empCity": "Navsari",
+      "hireDate": "2018-W24",
+      "perEmp": true,
+      "id": 5
+    }
+  ]
+}
